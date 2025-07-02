@@ -1,0 +1,15 @@
+﻿@model WebAppTest.Models.Orders
+
+<h2>Просмотр заказа</h2>
+
+<div>
+    <p><strong>Номер заказа:</strong> @Model.Id</p>
+    <p><strong>Город отправителя:</strong> @Model.SenderCity</p>
+    <p><strong>Адрес отправителя:</strong> @Model.SenderAddress</p>
+    <p><strong>Город получателя:</strong> @Model.RecipientCity</p>
+    <p><strong>Адрес получателя:</strong> @Model.RecipientAddress</p>
+    <p><strong>Вес:</strong> @Model.CargoWeight кг</p>
+    <p><strong>Дата забора:</strong> @Model.PickupDate.ToShortDateString()</p>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Назад</a>
