@@ -16,7 +16,7 @@
    cd WebAppTest
 
 2. Выполните миграцию базы данных:
-   dotnet ef database update
+   Update-Database
    
 4. Запустите приложение:
    dotnet run
